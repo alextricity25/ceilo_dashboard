@@ -8,10 +8,7 @@ token="<your token>"
 
 
 SCHEDULER.every '4s' do
-  last_valuation = current_valuation
-  last_karma     = current_karma
-  current_valuation = rand(100)
-  current_karma     = rand(200000)
+
   response1= RestClient.get("http://localhost:8777/v2/meters/cpu_util/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
 
   disk_read = RestClient.get("http://localhost:8777/v2/meters/disk.read.bytes/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
