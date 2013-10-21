@@ -1,11 +1,11 @@
 ---
-buzzwords: ! 'data: {"items":[{"label":"Turn-key","value":0},{"label":"Leverage","value":21},{"label":"Exit
-  strategy","value":22},{"label":"Web 2.0","value":22},{"label":"Streamlininess","value":21},{"label":"Enterprise","value":18},{"label":"Pivoting","value":19},{"label":"Paradigm
-  shift","value":24},{"label":"Synergy","value":23}],"id":"buzzwords","updatedAt":1381551746}
+buzzwords: ! 'data: {"items":[{"label":"Enterprise","value":6},{"label":"Web 2.0","value":18},{"label":"Exit
+  strategy","value":26},{"label":"Synergy","value":0},{"label":"Leverage","value":9},{"label":"Streamlininess","value":13},{"label":"Paradigm
+  shift","value":21},{"label":"Turn-key","value":14},{"label":"Pivoting","value":20}],"id":"buzzwords","updatedAt":1381868247}
 
 
 '
-convergence: ! 'data: {"points":[{"x":201,"y":9},{"x":202,"y":4},{"x":203,"y":23},{"x":204,"y":1},{"x":205,"y":23},{"x":206,"y":2},{"x":207,"y":23},{"x":208,"y":1},{"x":209,"y":42},{"x":210,"y":19}],"id":"convergence","updatedAt":1381551747}
+convergence: ! 'data: {"points":[{"x":316,"y":16},{"x":317,"y":11},{"x":318,"y":33},{"x":319,"y":12},{"x":320,"y":35},{"x":321,"y":12},{"x":322,"y":41},{"x":323,"y":37},{"x":324,"y":14},{"x":325,"y":45}],"id":"convergence","updatedAt":1382033471}
 
 
 '
@@ -21,23 +21,35 @@ synergy: ! 'data: {"value":83,"id":"synergy","updatedAt":1380778832}
 
 
 '
-avgcpu: ! 'data: {"current":1.41,"last":0,"id":"avgcpu","updatedAt":1381551747}
+avgcpu: ! 'data: {"current":1.55,"last":0,"id":"avgcpu","updatedAt":1381942855}
 
 
 '
-diskread: ! 'data: {"current":304128.0,"last":0,"id":"diskread","updatedAt":1381551747}
+diskread: ! 'data: {"current":304263.7108433735,"last":0,"id":"diskread","updatedAt":1381942855}
 
 
 '
-diskwrite: ! 'data: {"current":9477120.0,"last":0,"id":"diskwrite","updatedAt":1381551747}
+diskwrite: ! 'data: {"current":9514625.542168675,"last":0,"id":"diskwrite","updatedAt":1381942855}
 
 
 '
-netinc: ! 'data: {"current":56289208.0,"last":0,"id":"netinc","updatedAt":1381551747}
+netinc: ! 'data: {"current":198222333464.0,"last":0,"id":"netinc","updatedAt":1381942855}
 
 
 '
-netout: ! 'data: {"current":799152.0,"last":0,"id":"netout","updatedAt":1381551747}
+netout: ! 'data: {"current":1747962742.0,"last":0,"id":"netout","updatedAt":1381942855}
+
+
+'
+numOfInstances: ! 'data: {"current":1,"last":0,"id":"numOfInstances","updatedAt":1382018306}
+
+
+'
+computeNodes: ! 'data: {"items":[{"label":"cantu-stackceilodev2","value":1}],"id":"computeNodes","updatedAt":1382033471}
+
+
+'
+widget_id: ! 'data: {"id":"widget_id","updatedAt":1382018310}
 
 
 '

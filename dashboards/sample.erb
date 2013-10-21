@@ -1,27 +1,25 @@
 <% content_for(:title) { "My super sweet dashboard" } %>
+<script type='text/javascript'>
+    $(function() {
+    Dashing.gridsterLayout('[{"col":3,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":2}]')
+    });
+</script>
+<h1>Welcome to the Cloud :)</h1> 
 <div class="gridster">
-  <ul>
-<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="avgcpu" data-view="Number" data-title="Avg CPU utilization" data-prefix=""></div>
-    </li>
-	
-<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="diskread" data-view="Number" data-title= "bytes read on disk" data-prefix=""></div>
-    </li>
+    <ul>
 
-<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="diskwrite" data-view="Number" data-title="bytes written to disk" data-prefix=""></div>
-    </li>
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="netout" data-view="Number" data-title="Some data here!" data-prefix=""></div>
+        </li>
 
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="numOfInstances" data-view="Number" data-title="Number of Instances " data-prefix=""></div>
+        </li>
 
-<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="netinc" data-view="Number" data-title="number of incoming bytes on the network" data-prefix=""></div>
-    </li>
-
-<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="netout" data-view="Number" data-title="number of outgoing bytes on the network" data-prefix=""></div>
-    </li>
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+            <div data-id="computeNodes" data-view="List" data-title="Compute Nodes" data-prefix=""></div>
+        </li>
 
 
-  </ul>
+    </ul>
 </div>

@@ -28,6 +28,7 @@ GEM
     mime-types (1.25)
     multi_json (1.8.0)
     multipart-post (1.2.0)
+    mysql2 (0.3.13)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -77,5 +78,6 @@ DEPENDENCIES
   dashing
   execjs (= 1.4.0)
   json
+  mysql2
   rest-client
   twitter
