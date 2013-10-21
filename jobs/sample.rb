@@ -11,27 +11,27 @@ token="MIIOrQYJKoZIhvcNAQcCoIIOnjCCDpoCAQExCTAHBgUrDgMCGjCCDQMGCSqGSIb3DQEHAaCCD
 SCHEDULER.every '10s' do
 
 	#Getting the number of active instances from the nova API 
-	
-	numOfInstances = RestClient.get("http://166.78.190.103:8774/v2/007589e7f70f406db10e3aabdae3c39f/servers/detail", {'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json})
-	numOfInstances = JSON.parse(numOfInstances) 
-
-	
-
-  response1= RestClient.get("http://localhost:8777/v2/meters/cpu_util/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
-
-  disk_read = RestClient.get("http://localhost:8777/v2/meters/disk.read.bytes/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
-  disk_read = JSON.parse(disk_read) 
-
-  disk_write = RestClient.get("http://localhost:8777/v2/meters/disk.write.bytes/statistics", {'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
-  disk_write = JSON.parse(disk_write) 
-
-  netinc = RestClient.get("http://localhost:8777/v2/meters/network.incoming.bytes/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
-  netinc = JSON.parse(netinc) 
-
-  #request statistics data from the network.outgoing.bytes meter from the ceilometer API 
-  netout = RestClient.get("http://localhost:8777/v2/meters/network.outgoing.bytes/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
-  netout = JSON.parse(netout) 
-
+#	
+#	numOfInstances = RestClient.get("http://166.78.190.103:8774/v2/007589e7f70f406db10e3aabdae3c39f/servers/detail", {'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json})
+#	numOfInstances = JSON.parse(numOfInstances) 
+#
+#	
+#
+#  response1= RestClient.get("http://localhost:8777/v2/meters/cpu_util/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
+#
+#  disk_read = RestClient.get("http://localhost:8777/v2/meters/disk.read.bytes/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
+#  disk_read = JSON.parse(disk_read) 
+#
+#  disk_write = RestClient.get("http://localhost:8777/v2/meters/disk.write.bytes/statistics", {'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
+#  disk_write = JSON.parse(disk_write) 
+#
+#  netinc = RestClient.get("http://localhost:8777/v2/meters/network.incoming.bytes/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
+#  netinc = JSON.parse(netinc) 
+#
+#  #request statistics data from the network.outgoing.bytes meter from the ceilometer API 
+#  netout = RestClient.get("http://localhost:8777/v2/meters/network.outgoing.bytes/statistics", { 'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json })
+#  netout = JSON.parse(netout) 
+#
 		
   
 
@@ -46,9 +46,9 @@ SCHEDULER.every '10s' do
 
   #send_event('valuation', { current: current_valuation, last: last_valuation })
   #send_event('karma', { current: current_karma, last: last_karma })
-  send_event('avgcpu', { current: current_avgcpu, last: 0})
-  send_event('diskread', {current: current_diskread, last: 0})
-  send_event('diskwrite', {current: current_diskwrite, last: 0})
-  send_event('netinc', {current: current_netinc, last: 0}) 
-  send_event('netout', {current: current_netout, last: 0}) 
+#  send_event('avgcpu', { current: current_avgcpu, last: 0})
+#  send_event('diskread', {current: current_diskread, last: 0})
+#  send_event('diskwrite', {current: current_diskwrite, last: 0})
+#  send_event('netinc', {current: current_netinc, last: 0}) 
+#  send_event('netout', {current: current_netout, last: 0}) 
 end

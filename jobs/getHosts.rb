@@ -11,11 +11,11 @@ computeHash = Hash.new({ value: 0 })
 SCHEDULER.every '15s' do 
 
     #Getting information about the hosts
-    hosts=RestClient.get("http://localhost:8774/v2/#{tenant_id}/os-hosts", {'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json})
-    hosts=JSON.parse(hosts); 
-    allInstances = RestClient.get("http://localhost:8774/v2/#{tenant_id}/servers/detail", {'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json})
-    allInstances = JSON.parse(allInstances) 
-    activeInstances = Array.new(0) 
+#    hosts=RestClient.get("http://localhost:8774/v2/#{tenant_id}/os-hosts", {'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json})
+#    hosts=JSON.parse(hosts); 
+#    allInstances = RestClient.get("http://localhost:8774/v2/#{tenant_id}/servers/detail", {'X-Auth-Token' => "#{token}", :content_type => :json, :accept => :json})
+#    allInstances = JSON.parse(allInstances) 
+#    activeInstances = Array.new(0) 
 
     #Picking out all the Active instances 
     allInstances["servers"].each do |instance|
@@ -40,7 +40,7 @@ SCHEDULER.every '15s' do
     end
 
 
-    send_event('computeNodes', {items: computeHash.values}) 
+    #send_event('computeNodes', {items: computeHash.values}) 
 
 
 

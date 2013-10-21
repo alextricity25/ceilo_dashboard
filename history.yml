@@ -1,11 +1,10 @@
 ---
-buzzwords: ! 'data: {"items":[{"label":"Enterprise","value":6},{"label":"Web 2.0","value":18},{"label":"Exit
-  strategy","value":26},{"label":"Synergy","value":0},{"label":"Leverage","value":9},{"label":"Streamlininess","value":13},{"label":"Paradigm
-  shift","value":21},{"label":"Turn-key","value":14},{"label":"Pivoting","value":20}],"id":"buzzwords","updatedAt":1381868247}
+buzzwords: ! 'data: {"items":[{"label":"Pivoting","value":2},{"label":"Web 2.0","value":1},{"label":"Exit
+  strategy","value":2},{"label":"Enterprise","value":1},{"label":"Synergy","value":2},{"label":"Streamlininess","value":1}],"id":"buzzwords","updatedAt":1382381308}
 
 
 '
-convergence: ! 'data: {"points":[{"x":316,"y":16},{"x":317,"y":11},{"x":318,"y":33},{"x":319,"y":12},{"x":320,"y":35},{"x":321,"y":12},{"x":322,"y":41},{"x":323,"y":37},{"x":324,"y":14},{"x":325,"y":45}],"id":"convergence","updatedAt":1382033471}
+convergence: ! 'data: {"points":[{"x":10,"y":22},{"x":11,"y":18},{"x":12,"y":49},{"x":13,"y":15},{"x":14,"y":1},{"x":15,"y":41},{"x":16,"y":16},{"x":17,"y":14},{"x":18,"y":15},{"x":19,"y":14}],"id":"convergence","updatedAt":1382381308}
 
 
 '
@@ -41,15 +40,19 @@ netout: ! 'data: {"current":1747962742.0,"last":0,"id":"netout","updatedAt":1381
 
 
 '
-numOfInstances: ! 'data: {"current":1,"last":0,"id":"numOfInstances","updatedAt":1382018306}
+numOfInstances: ! 'data: {"current":0,"last":0,"id":"numOfInstances","updatedAt":1382381309}
 
 
 '
-computeNodes: ! 'data: {"items":[{"label":"cantu-stackceilodev2","value":1}],"id":"computeNodes","updatedAt":1382033471}
+computeNodes: ! 'data: {"items":[{"label":"firecompute1","value":0},{"label":"firecompute3","value":0},{"label":"firecompute2","value":0}],"id":"computeNodes","updatedAt":1382381309}
 
 
 '
 widget_id: ! 'data: {"id":"widget_id","updatedAt":1382018310}
+
+
+'
+freedisk: ! 'data: {"current":597,"last":0,"id":"freedisk","updatedAt":1382381309}
 
 
 '
