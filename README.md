@@ -4,6 +4,11 @@ Relevant Ceilometer API calls are in the jobs/sample.rb file.
 in the jobs/sample.rb file, you must insert your OpenStack token, or change the API calls to accept your username and password.
 The OpenStack token can be grabbed by running the keysotone token-get command
 
+Pre-reqs: 
+RVM 
+Ruby 1.9.3 
+gem install dashing 
+
 
 1. Open jobs/sample.rb 
 2. Insert your openstack keystone token where it says "your token". You can get this token by doing a "keystone token-get".
