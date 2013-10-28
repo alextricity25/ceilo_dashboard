@@ -1,7 +1,12 @@
 require 'dashing'
+require './lib/mycloud' 
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :blah, "This is a test"
+  set :num, MyCloud.num
+
+  
 
   helpers do
     def protected!
@@ -10,6 +15,7 @@ configure do
     end
   end
 end
+
 
 map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets
